@@ -1,0 +1,740 @@
+{
+  "intents": [
+    {
+      "tag": "saludos",
+      "patterns": [
+        "Hola",
+        "Buenos dias",
+        "Buenas tardes",
+        "Buenas noches",
+        "¿Que tal",
+        "Ayuda"
+      ],
+      "responses": [
+        "Hola, mi nombre es Pablo y soy tu asistente de SAT",
+        "Hola, ¿En qué te puedo ayudar?",
+        "Hola, ¿Cómo puedo ayudarte?",
+        "Hola, bienvenido. ¿En que soy de ayuda?",
+        "Bienvenido, estoy listo para ayudarte"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Adios",
+        "Eso es todo",
+        "Termine",
+        "Nos vemos",
+        "Salir",
+        "Finalizar"
+      ],
+      "responses": [
+        "Nos vemos, gracias por visitarme",
+        "Ten un maravilloso día",
+        "¡Adiós! Vuelve pronto."
+      ]
+    },
+    {
+      "tag": "gracias",
+      "patterns": [
+        "Gracias",
+        "Muchas gracias",
+        "Me ayudo mucho",
+        "Le agradesco",
+        "Ok, Gracias"
+      ],
+      "responses": [
+        "Me alegra ser de ayuda",
+        "Un placer ayudarle",
+        "Estoy para servirle"
+      ]
+    },
+    {
+      "tag": "e.firma",
+      "patterns": [
+        "¿Donde tramito la e.firma?",
+        "¿Que es la e.firma?",
+        "¿En donde se tramita la e.firma?",
+        "¿Como se tramita la e.firma?",
+        "¿Que es la e.firma (FIEL) y donde la tramito?",
+        "e.firma"
+      ],
+      "responses": [
+        "La e.firma el conjunto de datos y caracteres que te identifica al realizar trámites y servicios por internet en el SAT, así como en otras Dependencias, Entidades Federativas, Municipios y la iniciativa privada. <br>Tu e.firma es única, es un archivo seguro y cifrado, que tiene la validez de una firma autógrafa. <br>Para tramitarla es en cualquier oficina del SAT que preste el servicio e.firma de Personas Físicas, con previa cita registrada en el Portal del SAT."
+      ]
+    },
+    {
+      "tag": "noE.firma",
+      "patterns": [
+        "¿Que pasa si no tengo mi e.firma (FIEL)?",
+        "¿Necesito e.firma?",
+        "¿Debo tener e.firma?",
+        "¿Por que tengo que tener e.firma?",
+        "¿Que sucede si no tengo e.firma?"
+      ],
+      "responses": [
+        "No contar con tu firma electrónica representa un obstáculo para presentar Declaraciones mensuales o anuales, reimprimir acuses de RFC o reimprimir constancia de tu situación fiscal"
+      ]
+    },
+    {
+      "tag": "declara",
+      "patterns": [
+        "¿Por que tengo que hacer declaraciones?",
+        "¿Para que se hacen declaraciones?",
+        "¿Es necesario hacer declaraciones?",
+        "¿Por que tengo que declarar?",
+        "¿Es obligatorio declarar?",
+        "¿Debo hacer una declaracion?"
+      ],
+      "responses": [
+        "Es en nuestra Constitución Política donde se establece la obligación de los mexicanos de contribuir para el gasto público del país, es decir, de pagar impuestos. Los impuestos son uno de los medios principales por los que el gobierno obtiene ingresos; tienen gran importancia para la economía de nuestro país, ya que gracias a ellos se  puede invertir en aspectos prioritarios como la educación, la salud, la impartición de justicia y la seguridad."
+      ]
+    },
+    {
+      "tag": "ceros",
+      "patterns": [
+        "¿Puedo ingresar mi declaración de ingresos si esta en cero pesos ($0.00)?",
+        "¿Se puede hacer una declaración en ceros?",
+        "¿Puedo ingresar mi declaración sin ingresos o egresos?",
+        "¿Hay declaraciones en ceros?",
+        "¿Puedo hacer mis declaciones en cero?",
+        "¿Puedo hacer mis declaraciones en ceros?"
+      ],
+      "responses": [
+        "Declarar en ceros es posible, pero siempre y cuando como persona física, autónomo, o persona moral no hayas obtenido ningún tipo de ingresos y egresos en el periodo que reportes."
+      ]
+    },
+    {
+      "tag": "nueva",
+      "patterns": [
+        "¿Que hago si mi empresa es nueva y no tengo declaracion de ingresos?",
+        "¿Mi empresa es de recien creacion como demuestro que no tengo ingresos?",
+        "¿Como demuestro que mi empresa es nueva?"
+      ],
+      "responses": [
+        "Si tu empresa es de reciente creación, es posible demostrarlo validando la fecha de Inicio de tu Constancia de Situación Fiscal, esto quiere decir que tienes ingresos $0.00."
+      ]
+    },
+    {
+      "tag": "navegador",
+      "patterns": [
+        "¿Que navegador es recomendable para presentar las declaraciones?",
+        "¿Cual navegador debo usar?",
+        "¿Cual es el mejor buscador?",
+        "navegador"
+      ],
+      "responses": [
+        "Mozilla Firefox, Microsoft Edge y Safari."
+      ]
+    },
+    {
+      "tag": "portal",
+      "patterns": [
+        "¿En donde tengo que hacer mis declaraciones?",
+        "¿Cual es el portal del SAT?",
+        "¿En que pagina debo hacer mis declaracion?",
+        "¿En donde debo declarar?",
+        "portal",
+        "pagina"
+      ],
+      "responses": [
+        "Este es el portal del SAT: <br><a href='https://www.sat.gob.mx/home' target='_blank'>Click aquí</a>"
+      ]
+    },
+    {
+      "tag": "ingresarDeclaraciones",
+      "patterns": [
+        "¿Que necesito para ingresar al portal del SAT?",
+        "¿Que necesito para ingresar a hacer mis declaraciones?",
+        "¿Que necesito para ingresar al SAT?",
+        "¿Como ingreso a mis declaraciones?",
+        "¿Con que ingreso a mis declaraciones?",
+        "¿Con que puedo ingresar al portal del SAT?",
+        "¿Con que ingreso al portal"
+      ],
+      "responses": [
+        "Hay dos maneras de autenticarse para ingresar al portal. <br>Opción 1: Con contraseña, para lo cual se requiere el RFC a 13 posiciones, tu contraseña y capturar el captcha. <br>Opción 2: Con firma electrónica (e.firma), para lo cual se requieren los archivos .cer y .key, la contraseña de clave privada y el RFC a 13 posiciones."
+      ]
+    },
+    {
+      "tag": "definitiva",
+      "patterns": [
+        "¿Que es una declaracion definitiva?",
+        "Declaración definitiva"
+      ],
+      "responses": [
+        "Representa cantidad de ISR que se entregan de modo inmediato, estos no pueden disminuirse ni incrementarse para cuando el ejercicio haya finalizado, ya que el contribuyente no debe sumar mayores datos a lo largo del ejercicio para conocer el ISR a su cargo."
+      ]
+    },
+    {
+      "tag": "frecuencia",
+      "patterns": [
+        "¿Con que frecuencia debo presentar mi declaracion?",
+        "¿Cada cuanto presento mi declaracion?",
+        "¿Cuando se presentan las declaraciones?",
+        "¿Con que frecuencia hago mis declaracion?",
+        "¿Con que frecuencia debo presentar declaraciones?",
+        "¿Cada cuanto debo presentar declaraciones?",
+        "¿Con que frecuencia declaro?"
+      ],
+      "responses": [
+        "Las declaraciones se deben presentar a más tardar el día 17 del mes inmediato posterior a aquél al que corresponda el pago."
+      ]
+    },
+    {
+      "tag": "errorRegistro",
+      "patterns": [
+        "¿Que hago si al ver el detalle de mis ingresos por sueldos y salarios me muestra el mensaje -Existen errores en el registro-?",
+        "Errores de registro"
+      ],
+      "responses": [
+        "Este mensaje se muestra porque, de la información que se precargó, existe un campo que es obligatorio y no fue reportado por tu retenedor. Para continuar con tu declaración deberás seleccionar el ícono del bote de basura para eliminar la información que se te precargó y agregar la información completa."
+      ]
+    },
+    {
+      "tag": "CFDIdefinicion",
+      "patterns": [
+        "¿Que es el CFDI?",
+        "¿Que es un CFDI?",
+        "Definicion CFDI",
+        "CFDI",
+        "¿Que es CFDI?"
+      ],
+      "responses": [
+        "El CFDI (Comprobante Fiscal Digital por Internet) es un documento que avala las operaciones o transacciones realizadas por personas físicas o morales ante el SAT. Desde su instauración en 2004, es obligatorio para todos los contribuyentes.",
+        "El CFDI es el comprobante fiscal de un pago realizado que describe el costo del producto vendido o servicio prestado y el cual desglosa los impuestos aplicados. Se trata de un archivo en formato XML que cumple los estándares definidos por el SAT."
+      ]
+    },
+    {
+      "tag": "version",
+      "patterns": [
+        "¿En que version del CFDI debo de hacer mi tramite?",
+        "¿Cual es la version de CFDI que debo usar?",
+        "¿Que version de CFDI utilizo?",
+        "¿Cual version de CFDI uso?",
+        "¿Que version de CFDI uso?"
+      ],
+      "responses": [
+        "Servicio de facturación CFDI versión 4.0"
+      ]
+    },
+    {
+      "tag": "facturaElectronica",
+      "patterns": [
+        "¿Que es una factura electronica?",
+        "Factura electronica "
+      ],
+      "responses": [
+        "Una factura electrónica es un comprobante fiscal digital que se genera mediante internet (CFDI). Este comprobante es emitido a través de la página del SAT para que así se tenga registro de lo que una empresa o comerciante vende, es decir, los ingresos que está generando y que las autoridades fiscales tengan notificación de ello."
+      ]
+    },
+    {
+      "tag": "usosCFDI",
+      "patterns": [
+        "¿Cuales son los usos de CFDI mas utilizados?",
+        "CFDI usos",
+        "CFDI mas utilizados",
+        "¿Que uso de CDFI utilizo?"
+      ],
+      "responses": [
+        "Estos son los 5 CFDI más usados: <br>G03: Gastos en general <br>G01: Adquisición de mercancías <br>D01: Honorarios médicos, dentales y gastos hospitalarios <br>D07: Pagos por servicios educativos (colegiaturas) <br>G02: Devoluciones, descuentos o bonificaciones"
+      ]
+    },
+    {
+      "tag": "usosCFDIRegimen",
+      "patterns": [
+        "¿Cuales son los usos de CFDI mas utilizados para Regimen Simplificado de confianza RESICO?",
+        "CFDI que aplican en RESICO",
+        "CFDI para Regimen Simplificado de Confianza",
+        "Usos de CFDI que aplican para el Regimen Simplificado de Confianza",
+        "¿Que usos de CFDI puedo usar para el Regimen Simplificado de Confianza",
+        "usos CDFI en Regimen simplificado de confianza"
+      ],
+      "responses": [
+        "Los uso de CFDI que aplican para el Régimen Simplificado de Confianza son: <br>G01:Adquisición de mercancías <br>G02:Devoluciones, descuentos o bonificaciones. <br>G03: Gastos en general. <br>I01:Construcciones. <br>I02:Mobiliario y equipo de oficina por inversiones. <br>I03: Equipo de transporte <br>I04: Equipo de computo y accesorios. <br>I05: Dados, troqueles, moldes, matrices y herramental. <br>I06: Comunicaciones telefónicas. <br>I07: Comunicaciones satelitales. <br> I08:Otra maquinaria y equipo. <br> S01:Sin efectos fiscales. <br> CP01: Pagos"
+      ]
+    },
+    {
+      "tag": "cualesObligaciones",
+      "patterns": [
+        "¿Cuales son mis obligaciones fiscales?",
+        "¿Como se cuales son mis obligaciones fiscales?",
+        "¿Como veo mis obligaciones fiscales?",
+        "¿Donde estan mis obligaciones fiscales?"
+      ],
+      "responses": [
+        "En tu constancia de situación fiscal se encuentran tus obligaciones fiscales en la segunda hoja."
+      ]
+    },
+    {
+      "tag": "defConstancia",
+      "patterns": [
+        "¿Que es una constancia de situacion fiscal?",
+        "¿Para que sirve una constancia?",
+        "Definición de constancia de situacion fiscal"
+      ],
+      "responses": [
+        "La Constancia de Situación Fiscal es un acta que permite conocer el estatus de los contribuyentes ante el SAT. Se trata de una referencia sobre la legalidad de la situación fiscal del contribuyente."
+      ]
+    },
+    {
+      "tag": "oficinas",
+      "patterns": [
+        "¿En donde se situan las oficinas del sat?",
+        "Oficinas del SAT",
+        "Oficinas de hacienda",
+        "¿A donde puedo ir para aclaraciones?",
+        "¿Cuales son las oficionas del SAT?"
+      ],
+      "responses": [
+        "Existen diversas oficinas a las que puedes acudir, todo depende de tu ubicación. Puedes consultar la más cercana en el siguiente link <a href = 'https://www.sat.gob.mx/empresas/directorio-nacional-de-modulos-de-servicios-tributarios' target='_blank'>Click aquí</a>"
+      ]
+    },
+    {
+      "tag": "tiposImpuestos",
+      "patterns": [
+        "¿Que tipos de impuestos se pagan en el SAT?",
+        "¿Cuales son los impuestos del SAT?",
+        "¿Que impuestos se pagan en el SAT?"
+      ],
+      "responses": [
+        "Los impuestos más importantes son: <br>Impuesto Sobre la Renta (ISR) <br>Impuesto al Valor Agregado (IVA) <br>Impuesto Especial sobre Producción y Servicios (IEPS) <br>Impuesto sobre Automóviles Nuevos (ISAN) <br>Impuesto Empresarial a Tasa Única (IETU) <br>Impuesto a los Depósitos en Efectivo (IDE)"
+      ]
+    },
+    {
+      "tag": "RFC",
+      "patterns": [
+        "¿Que es RFC?",
+        "¿Tengo RFC?",
+        "¿Como tramito mi RFC?"
+      ],
+      "responses": [
+        "El RFC es una clave única alfanumérica compuesta de 13 letras y números para personas físicas y para personas morales es de 12 elementos.<br> Es un documento oficial que identifica a los contribuyentes y permite realizar declaraciones de impuestos y trámites con el Gobierno. Para obtenerlo, se necesita la CURP, la identificación oficial vigente y una cita en las oficinas del SAT. <br>Si quieres obtener tu RFC puedes consultarlo en el siguiente enlace <br> <a href = 'https://www.sat.gob.mx/tramites/28753/obten-tu-rfc-con-la-clave-unica-de-registro-de-poblacion-curp' target='_blank'> Click aquí</a>"
+      ]
+    },
+    {
+      "tag": "emisor",
+      "patterns": [
+        "¿Que es emisor?",
+        "¿Debo de tener un emisor?",
+        "Datos de emisor",
+        "emisor",
+        "Registro de emisor"
+      ],
+      "responses": [
+        "El Emisor de una Factura es el responsable de generar y emitir el comprobante fiscal al momento de realizar una transacción.<br>En este nodo se debe expresar la información del contribuyenteque emite el comprobante fiscal"
+      ]
+    },
+    {
+      "tag": "razonSocial",
+      "patterns": [
+        "¿Que es la razon social?",
+        "¿Cual es mi razon social?",
+        "razon social",
+        "nombre"
+      ],
+      "responses": [
+        "La razon social hace referencia a un concepto que nombra socialmente y fiscalmente un ente comercial. Por lo regular se solicita como Nombre y debes registrar el nombre, denominación o razón social inscrito en el RFC del emisor del comprobante."
+      ]
+    },
+    {
+      "tag": "tipoFactura",
+      "patterns": [
+        "¿Que es el tipo de factura?",
+        "¿Que tipo de factura debo de seleccionar?",
+        "¿Cual es el tipo de comprobante?",
+        "tipo de factura",
+        "tipo de comprobante"
+      ],
+      "responses": [
+        "El tipo de factura o tipo de comprobante hace referencia al tipo de CFDI, existen 4 tipos: <br>Ingreso<br>Se emite siempre que se efectúa una venta, ya que su principal objetivo es demostrar los ingresos de los contribuyentes ante la autoridad fiscal.<br>Egreso<br>Ampara las salidas de dinero de tu empresa como devoluciones, bonos y descuentos y también se pueden emplear para corregir o restar un comprobante de ingresos<br>Traslado<br>Antes conocido como carta de transporte, es un documento donde se encuentran declaradas todas y cada una de las mercancías que van a ser transportadas.<br>Pago<br>Debe emitirse en las operaciones con pagos con parcialidades o cuando al momento de expedir el comprobante fiscal no se recibe el pago"
+      ]
+    },
+    {
+      "tag": "moneda",
+      "patterns": [
+        "¿Que es el tipo de moneda?",
+        "¿Que moneda debo seleccionar?",
+        "¿Cual es el tipo de moneda mas utilizado?",
+        "moneda",
+        "tipo de moneda"
+      ],
+      "responses": [
+        "La moneda es utilizada para expresar los montos, cuando se usa moneda nacional se registra MXN, conforme con la especificación ISO 4217."
+      ]
+    },
+    {
+      "tag": "pagoSolaExhibicion",
+      "patterns": [
+        "¿Que es un pago de una sola exhibicion?",
+        "¿Por que se selecciona el pago de una sola exhibicion?",
+        "¿Cual es la clave de pago en una sola exhibicion?",
+        "¿Que significa PUE?",
+        "Pago sola exhibicion",
+        "PUE"
+      ],
+      "responses": [
+        "En el método de pago se debe registrar la clave que corresponda depende si se paga en una sola exhibición o en parcialidades <br>Se debe registrar la clave PUE (Pago en una sola exhibición), cuando se realice dicho pago al momento de emitir el comprobante."
+      ]
+    },
+    {
+      "tag": "generarFacturas",
+      "patterns": [
+        "¿Cuantas facturas puedo generar?",
+        "¿Puedo generar mas de una factura?",
+        "¿Cual es la cantidad minima de facturas?",
+        "numero de facturas",
+        "cuantas facturas",
+        "Mas facturas"
+      ],
+      "responses": [
+        "Cuando preguntas sobre cuantas facturas puedes generar te refieres a la periodicidad de la factura, puedes generar una factura como mínimo o varias al mes y no hay límite de importe"
+      ]
+    },
+    {
+      "tag": "publicoGeneral",
+      "patterns": [
+        "¿Que es el publico general?",
+        "¿Quien es el publico general?",
+        "¿Cual es la clave de publico general?",
+        "publico general",
+        "Clave publico general"
+      ],
+      "responses": [
+        "La factura al público en general engloba operaciones realizadas en un determinado periodo de tiempo, cuando se te solicita en el apartado cliente se ingresa al cliente XAXX010101000 que corresponde a la clave de público en general."
+      ]
+    },
+    {
+      "tag": "IVAdefinicion",
+      "patterns": [
+        "¿Que es el IVA?",
+        "¿Que significa IVA?",
+        "IVA",
+        "Impuesto de IVA"
+      ],
+      "responses": [
+        "El Impuesto de Valor Agregado IVA, es un impuesto indirecto, es decir, los contribuyentes no lo pagan directamente sino que lo trasladan o cobran a una tercera persona, y quien lo absorbe es el consumidor final del bien o servicio."
+      ]
+    },
+    {
+      "tag": "IVAacreditablePeriodo",
+      "patterns": [
+        "¿Que es el IVA acreditable del periodo?",
+        "¿Que es acreditable del periodo?",
+        "IVA acreditable del periodo",
+        "Impuesto acreditable del periodo",
+        "Acreditable del periodo"
+      ],
+      "responses": [
+        "Esto hace referencia a el impuesto efectivamente pagado en gastos realizados (compras y gastos) que cumplan con los requisitos fiscales (estrictamente indispensables)"
+      ]
+    },
+    {
+      "tag": "IVAcompensaciones",
+      "patterns": [
+        "¿Cuales son las compensaciones de IVA?",
+        "¿Que son las compensaciones?",
+        "¿Tengo que aplicar compensaciones?",
+        "Compensaciones por aplicar"
+      ],
+      "responses": [
+        "La compensación en términos del artículo 2185 del Código Civil Federal es una forma de extinción de las obligaciones que tiene lugar cuando dos personas reúnen la calidad de deudores y acreedores recíprocamente y por su propio derecho."
+      ]
+    },
+    {
+      "tag": "RESICO",
+      "patterns": [
+        "Regimen Simplificado de Confianza",
+        "¿Que es RESICO?",
+        "RESICO"
+      ],
+      "responses": [
+        "Pueden inscribirse aquellas personas físicas que realicen únicamente actividades empresariales, profesionales u otorguen el uso o goce temporal de bienes, siempre que la totalidad de sus ingresos propios de la actividad o las actividades, obtenidos en el ejercicio inmediato anterior, no excedan de la cantidad de tres millones quinientos mil pesos."
+      ]
+    },
+    {
+      "tag": "pagoDeclaracion",
+      "patterns": [
+        "¿Cuando se hace la declaracion?",
+        "¿Cada cuando se paga el ISR?",
+        "¿Cada cuando se paga el IVA?",
+        "Pago de IVA",
+        "Pago de ISR"
+      ],
+      "responses": [
+        "De acuerdo con lo que establece el Sistema de Administración Tributaria (SAT) esta declaración debe realizarse a más tardar el día 17 del mes siguiente al que corresponde el pago."
+      ]
+    },
+    {
+      "tag": "DecProvisional",
+      "patterns": [
+        "Declaracion provisional",
+        "¿Que es la declaración provisional"
+      ],
+      "responses": [
+        "Es la forma en que de se presenta la información sobre los ingresos, gastos, utilidades y pérdidas en un mes."
+      ]
+    },
+    {
+      "tag": "ImpuestosDeclaraciones",
+      "patterns": [
+        "¿Cuales son los impuestos federales en las declaraciones?",
+        "¿Que se presenta en las declaraciones?",
+        "Impuestos de declaraciones"
+      ],
+      "responses": [
+        "Impuesto Sobre la Renta (ISR), Impuesto al Valor Agregado (IVA), Impuesto Empresarial a Tasa Única (IETU), Impuesto Especial Sobre Producción y Servicios (IEPS), Retenciones de Impuestos realizadas a terceros"
+      ]
+    },
+    {
+      "tag": "Multa",
+      "patterns": [
+        "¿Que pasa si no pago las declaraciones?",
+        "Es importante pagar",
+        "Debo pagar las declaraciones",
+        "¿Hay multas?"
+      ],
+      "responses": [
+        "Cuando se paga fuera del plazo alguna obligación fiscal, las autoridades pueden llegar a imponer alguna multa o recargo."
+      ]
+    },
+    {
+      "tag": "ISR",
+      "patterns": [
+        "¿Que es el ISR?",
+        "¿Para que es el ISR?"
+      ],
+      "responses": [
+        "La declaración ISR simplificado de confianza, Personas físicas se crea con el objeto de simplificar el cumplimiento de pago del Impuesto sobre la Renta de las personas físicas del Régimen Simplificado de Confianza."
+      ]
+    },
+    {
+      "tag": "Excentos",
+      "patterns": [
+        "Quienes tienen ingresos exentos de ISR",
+        "Hasta que cantidad se tienen ingresos exentos de ISR",
+        "Impuestos Exentos"
+      ],
+      "responses": [
+        "Son los ingresos no sujetos al pago de impuesto obtenidos en el mes que corresponden al pago mensual que declara. Las personas físicas que se dediquen a la agricultura, ganadería, silvicultura y actividades pesqueras tendrán ingresos exentos hasta por $900,000."
+      ]
+    },
+    {
+      "tag": "OpcCon",
+      "patterns": [
+        "Opcion consultas, declaraciones, orden de pago, acuses",
+        "Consultas"
+      ],
+      "responses": [
+        "En la opción de Consultas, podrás consultar y reimprimir las declaraciones presentadas, por obligación, pagadas y los acuses de recibo de la declaración."
+      ]
+    },
+    {
+      "tag": "OpcDec",
+      "patterns": [
+        "Opcion Presentacion declaracion otras obligaciones"
+      ],
+      "responses": [
+        "En esta opción podrás declarar las obligaciones que no se encuentran registradas en la sección Obligaciones a declarar del apartado Configuración de la declaración"
+      ]
+    },
+    {
+      "tag": "Periodo",
+      "patterns": [
+        "¿Que periodicidad debo seleccionar?",
+        "Periodicidad"
+      ],
+      "responses": [
+        "La periodicidad es Mensual"
+      ]
+    },
+    {
+      "tag": "TipoDecla",
+      "patterns": [
+        "¿Que tipo de declaracion selecciono?",
+        "Declaracion normal",
+        "Declaracion complementaria"
+      ],
+      "responses": [
+        "- Declaración normal: Este tipo de declaraciones son presentadas por primera vez en el periodo. - Declaración complementaria: Es la que se presenta para corregir una omisión o equivocación en las declaraciones normales."
+      ]
+    },
+    {
+      "tag": "SelDec",
+      "patterns": [
+        "¿Por que tengo seleccionado ISR e IVA?",
+        "La declaracion de ISR",
+        "La declaracion de IVA"
+      ],
+      "responses": [
+        "La declaración de ISR está prellenada con la información de los comprobantes fiscales de tipo ingreso emitidos por las personas físicas en el periodo de pago. La declaración de IVA está prellenada con la información de los comprobantes fiscales de tipo ingreso y egreso, emitidos y recibidos por las personas físicas en el periodo de pago."
+      ]
+    },
+    {
+      "tag": "Copropiedad",
+      "patterns": [
+        "¿Como se si mis ingresos son por copropiedad?",
+        "Copropiedad",
+        "Ingresos por copropiedad"
+      ],
+      "responses": [
+        "Se establece que hay copropiedad cuando una cosa o un derecho pertenecen pro-indiviso a varias personas."
+      ]
+    },
+    {
+      "tag": "Adici",
+      "patterns": [
+        "Ingresos adicionales del mes"
+      ],
+      "responses": [
+        "Son los ingresos adicionales que obtuvo el contribuyente en el mes que declara."
+      ]
+    },
+    {
+      "tag": "ImpCob",
+      "patterns": [
+        "Total de impuestos percibidos por la actividad",
+        "Ingresos cobrados y amparados por facturas del mes"
+      ],
+      "responses": [
+        "Es el resultado de Ingresos cobrados del mes más los Ingresos adicionales del mes"
+      ]
+    },
+    {
+      "tag": "Descuento",
+      "patterns": [
+        "¿Como aplico mis Devoluciones, descuentos y bonificaciones?",
+        "Devoluciones",
+        "Descuentos",
+        "Bonificaciones"
+      ],
+      "responses": [
+        "Cuando el monto del impuesto causado por el contribuyente en el mes de que se trate resulte inferior al monto del impuesto que se disminuya, el contribuyente podrá disminuir la diferencia que resulte entre dichos montos, en la siguiente o siguientes declaraciones, hasta agotarlo. Puedes ver todos los detalles en el artículo 60 del SAT: <br><a href='https://www.sat.gob.mx/articulo/98559/articulo-6' target='_blank'>Click aquí</a>"
+      ]
+    },
+    {
+      "tag": "Base",
+      "patterns": [
+        "Base gravable"
+      ],
+      "responses": [
+        "Es el resultado de Ingresos cobrados y amparados por facturas del mes menos los ingresos exentos, en caso de existir, del mes que se declara."
+      ]
+    },
+    {
+      "tag": "ImpMen",
+      "patterns": [
+        "Impuesto mensual"
+      ],
+      "responses": [
+        "Es el impuesto determinado, resultado de multiplicarla base gravable por la tasa"
+      ]
+    },
+    {
+      "tag": "Retenido",
+      "patterns": [
+        "ISR retenido",
+        "ISR no acreditable"
+      ],
+      "responses": [
+        "La información de este campo corresponde a las retenciones realizadas por las personas morales a la tasa del 1.25%"
+      ]
+    },
+    {
+      "tag": "ACargo",
+      "patterns": [
+        "Impuesto a cargo"
+      ],
+      "responses": [
+        "Es el resultado de restar el impuesto mensual menos el ISR retenido."
+      ]
+    },
+    {
+      "tag": "Compen",
+      "patterns": [
+        "Compensaciones por aplicar",
+        "Compensaciones"
+      ],
+      "responses": [
+        "Para aplicar la compensación de cantidades a favor, contesta Sí a la pregunta, durante el llenado de ISR para habilitar el campo Compensaciones, con el fin de registrar los datos correspondientes a la declaración en la que se generó el saldo a favor que deseas compensar.",
+        "Para registrar el importe de los saldos a favor que deseas compensar, selecciona el botón Capturar, con ello se habilitará un apartado en el cual registrarás los datos de las declaraciones en donde se generaron los saldos a favor que deseas compensar."
+      ]
+    },
+    {
+      "tag": "CantPago",
+      "patterns": [
+        "Cantidad a pagar "
+      ],
+      "responses": [
+        "Es el resultado de disminuir el total de contribuciones con el total de aplicaciones"
+      ]
+    },
+    {
+      "tag": "PerFis",
+      "patterns": [
+        "¿Que es una persona física?",
+        "Persona fisica"
+      ],
+      "responses": [
+        "Es un individuo que realiza cualquier actividad económica (vendedor, comerciante, empleado, profesionista, etc.), el cual tiene derechos y obligaciones."
+      ]
+    },
+    {
+      "tag": "PerMor",
+      "patterns": [
+        "Persona moral",
+        "¿Que es una persona moral?"
+      ],
+      "responses": [
+        "Es el conjunto de personas físicas, que se unen para la realización de un fin colectivo, son entes creados por el derecho, no tienen una realidad material o corporal, sin embargo, la ley les otorga capacidad jurídica para tener derechos y obligaciones."
+      ]
+    },
+    {
+      "tag": "actividadesGravadas",
+      "patterns": [
+        "actividades gravadas IVA",
+        "¿Cuales son las actividades gravadas del IVA?",
+        "IVA acreditable por actividades gravadas"
+      ],
+      "responses": [
+        "Se captura el IVA pagado, que correspondan a las actividades o ventas gravadas a tasa 16% u 8% y 0%"
+      ]
+    },
+    {
+      "tag": "actividadesMixtas",
+      "patterns": [
+        "actividades mixtas IVA",
+        "¿Cuales son las actividades mixtas del IVA?",
+        "IVA acreditable por actividades mixtas"
+      ],
+      "responses": [
+        "Se captura la proporción de IVA pagado por las actividades parcialmente gravadas y exentas."
+      ]
+    },
+    {
+      "tag": "estimulosAplicar",
+      "patterns": [
+        "estimulos aplicar",
+        "¿Cuales son los estimulos por aplicar?",
+        "estimulos por aplicar",
+        "estimulos aplicables",
+        "¿Que estimulos son aplicables?"
+      ],
+      "responses": [
+        "Los Estímulos fiscales son beneficios que reciben los contribuyentes que cumplen ciertos requisitos para reducir o eliminar el pago tributario de determinados gravámenes. Pueden ser actividades de enajenación de bienes, prestación de servicios independientes u otorgamiento del uso o goce temporal de bienes en los locales."
+      ]
+    },
+    {
+      "tag": "tasaIVA",
+      "patterns": [
+        "¿Cual es la tasa del IVA?",
+        "¿Que tasa del IVA debo aplicar?",
+        "tasa del IVA",
+        "¿Como puedo calcular la tasa del IVA?"
+      ],
+      "responses": [
+        "El porcentaje del IVA tiene una tasa general del 16%. La tasa de IVA especial para la zona Fronteriza equivale al 8%. Tasa del 0% para algunos específicos como enajenaciones (venta o donación) de terrenos y casas habitación. <br> Si quieres ver más a detalle en que se aplica cada tasa puedes consultar el siguiente <a href='https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf' target='_blank'>documento</a> <br>Si quieres calcularlo lo puedes hacer <a href='http://www.calculadorasat.com/calcular-iva' target='_blank'>aquí</a>"
+      ]
+    }
+  ]
+}
